@@ -1,5 +1,7 @@
 package com.bridge;
 import java.util.Scanner;
+
+
 public class LineComparison {
 
 	public static void main(String[] args) {
@@ -32,6 +34,17 @@ public class LineComparison {
 	     else {
 	            System.out.println("line1 and line2 are not equal");
 	        }
+	     
+	     int value = Lengthofline1.compareTo(Lengthofline2);
+	     if(value<0) {
+	    	 System.out.println("length of line1 is greater than line2");
+	     }
+	     else if (value >0) {
+	    	 System.out.println("length of line2 is greater than line1");
+	     }
+	     else {
+	    	 System.out.println("both lines are equal");
+	     }
 	     sc.close();
 	}
 		
